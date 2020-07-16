@@ -1,5 +1,5 @@
 import React from "react";
-import Chat from "../Components/Chat";
+import Chat from "../Components /Chat";
 import styled from '../Style.module.css'
 import {generateId} from "../External_Functions";
 

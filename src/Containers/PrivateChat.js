@@ -63,7 +63,6 @@ class PrivateChat extends Component {
         if (event.which === 13) {
             this.sentMsgDate = this.getTime()
             let messageID = ""
-            let userID = ""
             do {
                 messageID = generateId()[0]
             } while (this.usedMsgIds.includes(messageID))
