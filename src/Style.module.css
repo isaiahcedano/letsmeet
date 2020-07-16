@@ -1,0 +1,703 @@
+.PrivateChat,
+.PrivateChatDefault,
+.SendMessageBoxContainer,
+.SentMessageBox,
+.RecieveMessageBox,
+.MessageContainer {
+    display: flex;
+}
+
+.FormContainer {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FormInputContainer {
+    overflow-y: scroll;
+}
+
+/* Chat Room Page Components */
+.ChatRoom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+@media (orientation: portrait) {
+    .ChatRoom {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 815px) {
+    .ChatRoom {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-height: 360px) {
+    .ChatRoom {
+        flex-direction: column-reverse;
+    }
+}
+
+.ChatRoomLeftSide {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    justify-content: center;
+}
+
+@media (orientation: portrait) {
+    .ChatRoomLeftSide {
+        overflow-y: visible;
+        overflow-x: hidden;
+        width: 100%;
+    }
+}
+
+@media (max-width: 815px) {
+    .ChatRoomLeftSide {
+        overflow-y: visible;
+        overflow-x: hidden;
+        width: 100%;
+    }
+}
+
+@media (max-height: 360px) {
+    .ChatRoomLeftSide {
+        overflow-y: visible;
+        overflow-x: hidden;
+        width: 100%;
+    }
+}
+
+.SearchBar {
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 10px;
+    text-align: left;
+    outline: none;
+    width: 50%;
+    align-self: center;
+    margin: 10px;
+    height: 5%;
+}
+
+@media (orientation: portrait) {
+    .SearchBar {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 815px) {
+    .SearchBar {
+        margin: 15px;
+    }
+}
+
+@media (max-height: 360px) {
+    .SearchBar {
+        margin: 15px;
+    }
+}
+
+.ChatList {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@media (orientation: portrait) {
+    .ChatList {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 815px) {
+    .ChatList {
+        margin-top: 15px;
+    }
+}
+
+@media (max-height: 360px) {
+    .ChatList {
+        margin-top: 15px;
+    }
+}
+
+.ChatIconCategory {
+    width: 18px;
+    height: 18px;
+    align-self: flex-start;
+}
+
+.ChatIconCategory:hover {
+    cursor: default;
+}
+
+.ChatBox {
+    display: flex;
+    align-items: center;
+    transition: all 0.75s;
+    width: inherit;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+.ChatBox:hover {
+    background-color: #7d7d7d;
+    cursor: pointer;
+}
+
+.ChatIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.ChatIcon:hover {
+    cursor: default;
+}
+
+.Username {
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+
+.Username:hover {
+    cursor: pointer;
+}
+
+.PrivateChat {
+    background: darkgray;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+.PrivateChatDefault {
+    background: darkgray;
+    width: 65%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (orientation: portrait) {
+    .PrivateChat, .PrivateChatDefault {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .ChatRoomHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 815px) {
+    .PrivateChatDefault, .PrivateChat {
+        width: 100%;
+    }
+}
+
+@media (max-height: 360px) {
+    .PrivateChatDefault, .PrivateChat {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .PrivateChat {
+        height: 80%;
+    }
+
+}
+
+.ChatRoomHeader {
+    display: flex;
+    width: 100%;
+}
+
+.UsernameIconContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+@media (max-width: 450px) {
+    .UsernameIconContainer {
+        margin-left: 0px;
+    }
+}
+
+.ChatRoomOptions {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 450px) {
+    .ChatRoomOptions {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+}
+
+.ChatRoomOption {
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+
+.ChatRoomOption:hover {
+    text-decoration-line: underline;
+}
+
+@media (max-width: 450px) {
+    .ChatRoomOption {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+.UsernamePrivateRoom {
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.UsernamePrivateRoom:hover {
+    cursor: default;
+}
+
+.MessageContainer {
+    width: 100%;
+    overflow-y: auto;
+    height: 60vh;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+@media (max-width: 450px) {
+    .MessageContainer {
+        height: 50vh;
+    }
+}
+
+.ChatRoomGreeting {
+    transition: 2s all;
+}
+
+.ChatRoomGreeting:hover {
+    transform: scale(1.2);
+    cursor: default;
+}
+
+.MessageSentContainer {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    margin-right: 15px;
+}
+
+.MessageRecievedContainer {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 15px;
+}
+
+.MessageSent {
+    color: white;
+    background-color: green;
+    border-radius: 1.3em;
+    padding: 10px;
+    max-width: 350px;
+    width: inherit;
+    margin-bottom: 0px;
+}
+
+.MessageRecieved {
+    color: white;
+    background-color: gray;
+    border-radius: 1.3em;
+    padding: 10px;
+    max-width: 350px;
+    width: inherit;
+    margin-bottom: 0px;
+}
+
+.MessageOptionsContainer {
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MessageOptionsBtn {
+    letter-spacing: 2px;
+    margin-bottom: 100%;
+}
+
+.MessageOptionsBtn:hover {
+    cursor: pointer;
+}
+
+.MessageOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.MessageOption {
+    font-size: small;
+}
+
+.MessageOption:hover {
+    cursor: pointer;
+}
+
+.MessageDateContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.SentDateMessage {
+    font-size: 13px;
+    margin-top: 0px;
+    text-align: right;
+}
+
+.SendMessageBoxContainer {
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.SendMessageBox {
+    width: 25%;
+}
+
+@media (max-width: 450px) {
+    .SendMessageBox {
+        width: 40%;
+    }
+}
+
+.SendMessageBtn {
+    width: 15%;
+    margin-top: 15px;
+}
+
+@media (max-width: 450px) {
+    .SendMessageBtn {
+        width: 30%;
+    }
+}
+
+/* Home Page Components */
+
+.HomePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+.HomePageHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    align-self: flex-start;
+    height: 10%;
+}
+
+@media (orientation: portrait) {
+    .HomePageHeader {
+        flex-direction: column;
+        align-items: center;
+        height: initial;
+    }
+}
+
+@media (max-width: 500px) {
+    .HomePageHeader {
+        flex-direction: column;
+        align-items: center;
+        height: initial;
+    }
+}
+
+.LinkTypeHeader {
+    text-decoration: none;
+    color: white;
+    transition: 0.25s all;
+}
+
+@media (max-width: 500px) {
+    .LinkTypeHeader {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media (orientation: portrait) {
+    .LinkTypeHeader {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+.LinkTypeHeader:hover {
+    color: gray;
+}
+
+.LogoHomePage {
+    align-self: center;
+    position: absolute;
+    font-size: 6vh;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.LogoHomePage:hover {
+    cursor: default;
+}
+
+.DefaultUsername {
+    color: white;
+    letter-spacing: 3px;
+    align-self: flex-end;
+    margin-left: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: large;
+}
+
+.DefaultUsername:hover {
+    cursor: default;
+}
+
+/* Create Group Form Page */
+.CreateGroupFormContainer {
+    display: flex;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 22%, rgba(45,46,253,1) 100%);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.GroupForm {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 25%;
+    height: 80%;
+    align-items: center;
+}
+
+.FormTitle {
+    display: flex;
+    margin: 5%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.FormMainLabel {
+    margin-bottom: 10px;
+}
+
+.Users {
+    height: 80%;
+    overflow-y: auto;
+    margin: 3%;
+    width: 100%;
+}
+
+.Categories {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.IndividualCategoryInputContainer {
+    margin: 5px;
+}
+
+.GroupFormInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+}
+
+.GroupFormBtn {
+    align-self: center;
+    margin: 5%;
+}
+
+@media (max-width: 800px) {
+    .GroupForm {
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    .GroupForm {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .GroupForm {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .GroupForm {
+        width: 60%;
+    }
+}
+
+@media (max-width: 400px) {
+    .GroupForm {
+        width: 70%;
+    }
+}
+
+
+/* Add User Form Page */
+.AddUserFormContainer {
+    display: flex;
+    background: rgb(52,52,52);
+    background: linear-gradient(0deg, rgba(52,52,52,1) 15%, rgba(253,114,45,1) 100%);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.AddForm {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 25%;
+    height: 50%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    .AddForm {
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    .AddForm {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .AddForm {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .AddForm {
+        width: 60%;
+    }
+}
+
+@media (max-width: 400px) {
+    .AddForm {
+        width: 70%;
+    }
+}
+
+.AddFormBtn {
+    align-self: center;
+    margin: 5%;
+}
+
+
+/* Change Nickname Form Page */
+.ChangeNicknameFormContainer {
+    display: flex;
+    background: rgb(52,52,52);
+    background: linear-gradient(0deg, rgba(52,52,52,1) 15%, rgba(45,253,76,1) 100%);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChangeNicknameForm {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 25%;
+    height: 30%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    .ChangeNicknameForm {
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    .ChangeNicknameForm {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .ChangeNicknameForm {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .ChangeNicknameForm {
+        width: 60%;
+    }
+}
+
+@media (max-width: 400px) {
+    .ChangeNicknameForm {
+        width: 70%;
+    }
+}
+
+.ChangeNicknameFormBtn {
+    align-self: center;
+    margin: 5%;
+}
